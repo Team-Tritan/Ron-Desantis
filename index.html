@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fuck you, Ron Desantis!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+      body {
+        background-color: red;
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 150px;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .bg {
+        background-repeat: repeat;
+        animation: animateBg 5s infinite;
+      }
+
+      @keyframes animateBg {
+        0% {
+          background-position: 0 0;
+          transform: scale(1);
+        }
+        50% {
+          background-position: 100% 0;
+          transform: scale(1.2);
+        }
+        100% {
+          background-position: 0 0;
+          transform: scale(1);
+        }
+      }
+
+      .rainbow {
+        background-image: linear-gradient(
+          to right,
+          violet,
+          indigo,
+          blue,
+          green,
+          yellow,
+          orange,
+          red
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body class="bg">
+    <center>
+      <h1 style="color: white">
+        <span class="text-shadow: 2px 2px 4px black;">Fuck you</span> <br />
+        <span class="rainbow">Ron Desantis</span>!
+      </h1>
+
+      <p style="color: white; text-shadow: 2px 2px 4px black">
+        Suck a gay mexican's trans girlcock
+      </p>
+    </center>
+  </body>
+
+  <script>
+    let gayNiggaTwerk = [
+      "url('https://media.tenor.com/b-nOHaTtTmgAAAAd/nigga-twerk-twerk.gif')",
+      "url('https://i.imgur.com/T14FkFO.gif')",
+      "url('https://media3.giphy.com/media/3o85xpi3wbmElPKSFq/giphy.gif?cid=6c09b9521qijvc8p2fh9cxhd96fj9pfd7oozidbah36fcqdd&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      "url('https://www.boyculture.com/.a/6a00d8341c2ca253ef019b00bfdd75970d-550wi')",
+      "url('https://i.imgur.com/PmlvjqQ.gif')",
+      "url('https://media.tenor.com/04nrIcyKBu4AAAAC/black-bubble.gif')",
+      "url('https://media.tenor.com/hBU2Zb7fqH8AAAAC/uh-yeah-booty.gif')",
+      "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fxxxpicz.com%2Fxxx%2Fgay-twerk-gay-porn-gay-twerk-showing-media-posts-for-gay-tweak-gif.gif&f=1&nofb=1&ipt=4ad75738bd39384c0928de92510e3d845ae458ae617b0ae5f0d1aea2e4eeeba0&ipo=images')",
+    ];
+
+    $(document).ready(function () {
+      function changeBackground() {
+        let datnigga =
+          gayNiggaTwerk[Math.floor(Math.random() * gayNiggaTwerk.length)];
+        $("body").css("background", datnigga);
+      }
+
+      $(".bg").on("animationiteration", changeBackground);
+      changeBackground();
+    });
+  </script>
+</html>
